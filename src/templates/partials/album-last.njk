@@ -1,0 +1,22 @@
+{% for album in albums %}
+{% if album.highlight == true %}
+<section>
+	<h1>{{album.title}}</h1>
+	<h2>Ya a la venta</h2>
+</section>
+<section class="album-detail">
+	<article>
+		<div class="album-info">
+			<a href="albumes/{{album.url}}">
+				<img src="images/{{album.imageUrl}}"  alt="{{album.imageUrl}}" />
+			</a>
+			<p>{{album.description}}</p>					
+		</div>
+		<div>
+			{% include 'partials/songs-list.njk' %}
+			{% include 'partials/button-list.njk' %}
+		</div>
+	</article>
+</section>
+{% endif %}
+{% endfor %}

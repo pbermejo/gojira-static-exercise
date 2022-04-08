@@ -1,0 +1,11 @@
+:root{
+	--color-dark: hsl(0, 5%, 3%);
+	--color-light: rgb(255, 245, 255);
+	--color-01: rgb(0, 253, 190);
+	--color-02: rgb(236, 109, 130);
+	--color-03: hsl(41, 20%, 81%);
+	--color-visited:  rgb(35, 177, 141);
+	--theme-color: var(--color-light);
+	--theme-background-color: var(--color-dark);
+	--text-shadow: hsla(50, 10%, 20%, .3);
+}

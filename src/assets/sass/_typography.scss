@@ -1,0 +1,81 @@
+$text-sizes: (
+	h1: 2.7em,
+	h2: 1.8em,
+	h3: 1.8em,
+	h4: 1.333em,
+	h5: 1.111em,
+	a: 1em,
+	button: 1em,
+	p: 1.15em,
+);
+
+@each $size, $value in $text-sizes {
+	#{$size} {
+	  font-size: #{$value};
+	  line-height: 1em;
+	}
+}
+h1{
+	margin-bottom: var(--space-lg);
+	text-transform: uppercase;
+	transition: all .5s cubic-bezier(1, 0, 0, 1);
+	letter-spacing: .15em;
+}
+h2{
+	margin-top: 0;
+	color: var(--color-02);
+	font-weight: var(--text-weight-light);
+	transition: all .5s cubic-bezier(1, 0, 0, 1);
+}
+h3{
+	margin-top: 0;
+	margin-bottom: var(--space-xs);
+	transition: all .5s cubic-bezier(1, 0, 0, 1);
+}
+h4 {
+	font-weight: var(--text-weight-normal);
+	margin-bottom: var(--space-xs);
+}
+h5{
+	color: var(--color-secondary);
+	margin: 0;
+}
+ul{
+	line-height: 1.2em;
+}
+
+p {
+	font-weight: var(--text-weight-light);
+	line-height: 1.2em;
+	margin-top: 0;
+	text-align: justify;
+}
+a{
+	color: var(--color-01);
+	text-decoration: none;
+	
+	&:not(.button):not(.navbar-item):not(.navbar-logo):not(.navbar-burger){
+		display: inline-block;
+		outline: 1px solid transparent;
+		outline-offset: 0;
+		transition: outline .3s ease-out;
+		&:active,
+		&:hover,
+		&:focus{
+			outline: 1px solid currentColor;
+			outline-offset: .1em;
+			text-shadow: 0 0 .5rem currentColor;
+			transition: outline .3s ease-out;
+		}
+		&:visited{
+			box-shadow: 0 0 .5rem currentColor;
+			color: dvar(--color-visited);
+		}
+	}
+}
+blockquote{
+	font-size: 1.2rem;
+	border-top: .2em solid var(--color-01);
+	padding: var(--space-sm) 0;
+	font-style: italic;
+}

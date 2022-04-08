@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px){
+	header{
+		background-color: var(--header-background-color);
+		position: fixed;
+	}
+	nav{
+		flex-wrap: wrap;
+	}
+	.navbar-menu{
+		display: none;
+		&.is-expanded{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.navbar-burger{
+		display: flex;
+	}
+}

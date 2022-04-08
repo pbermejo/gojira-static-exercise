@@ -1,0 +1,45 @@
+<nav role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a href="{{baseDir}}index.html" class="navbar-logo">
+      {% include 'partials/icon-logo.njk' %}
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+      <i class="icon-menu"></i>
+    </a>
+  </div>
+  <ul id="navbarMenu" class="navbar-menu">
+    <li class="is-fadeInUp">
+      {% if page == 'page-band'%}
+        <a class="navbar-item active" href="{{baseDir}}banda/index.html">
+        {% else %}
+          <a class="navbar-item" href="{{baseDir}}banda/index.html">
+          {% endif %}
+          <span>Banda</span>
+        </a>
+      </li>
+      <li class="is-fadeInUp">
+        {% if page == 'page-albums'%}
+          <a class="navbar-item active" href="{{baseDir}}albumes/index.html">
+          {% else %}
+            <a class="navbar-item" href="{{baseDir}}albumes/index.html">
+            {% endif %}
+            <span>Álbumes</span>
+          </a>
+        </li>
+        <li class="is-fadeInUp">
+          {% if page == 'page-tour'%}
+            <a class="navbar-item active" href="{{baseDir}}gira/index.html">
+            {% else %}
+              <a class="navbar-item" href="{{baseDir}}gira/index.html">
+              {% endif %}
+              <span>Gira</span>
+            </a>
+          </li>
+          <li class="is-fadeInUp">
+            <a class="navbar-item" href="mailto:contact@gojira-fake.com">
+              <i class="icon-mail_outline"></i>
+              <span>Contacto</span>
+            </a>
+          </li>
+        </ul>
+      </nav>

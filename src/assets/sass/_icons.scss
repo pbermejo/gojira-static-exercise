@@ -1,0 +1,83 @@
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: '#{$icomoon-font-family}' !important;
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  .icon-tickets{
+	  max-width: 40%;
+	  fill: var(--color-02);
+  }
+  .icon-vynil {
+	&::before {
+	  content: $icon-vynil; 
+	}
+  }
+  .icon-instagram {
+	&::before {
+	  content: $icon-instagram; 
+	}
+  }
+  .icon-facebook {
+	&::before {
+	  content: $icon-facebook; 
+	}
+  }
+  .icon-twitter {
+	&::before {
+	  content: $icon-twitter; 
+	}
+  }
+  .icon-tweet {
+	&::before {
+	  content: $icon-tweet; 
+	}
+  }
+  .icon-mail_outline {
+	&::before {
+	  content: $icon-mail_outline; 
+	}
+  }
+  .icon-clear {
+	&::before {
+	  content: $icon-clear; 
+	}
+  }
+  .icon-local_grocery_store {
+	&::before {
+	  content: $icon-local_grocery_store; 
+	}
+  }
+  .icon-spotify {
+	&:before {
+	  content: $icon-spotify; 
+	}
+  }
+  .icon-access_time {
+	&:before {
+	  content: $icon-access_time; 
+	}
+  }
+  .icon-menu {
+	&::before {
+	  content: $icon-menu; 
+	}
+  }
+  .icon-arrow_forward_ios {
+	&::before {
+	  content: $icon-arrow_forward_ios; 
+	}
+  }
+  .icon-person {
+	&::before {
+	  content: $icon-person; 
+	}
+  }

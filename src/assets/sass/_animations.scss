@@ -1,0 +1,59 @@
+.is-fadeInUp{
+	animation-name: fadeInUp;
+	animation-timing-function: ease-out;
+	animation-delay: .3s;
+	animation-duration: .4s;
+	animation-fill-mode: both;
+
+	@for $i from 0 through 20{
+		&:nth-of-type(#{$i}){
+			animation-delay: #{.2 * $i}s;
+		}
+	}
+}
+
+.is-fadeInLeft{
+	animation-name: fadeInLeft;
+	animation-timing-function: ease-out;
+	animation-delay: .3s;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+
+	@for $i from 0 through 20{
+		&:nth-of-type(#{$i}){
+			animation-delay: #{.1 * $i}s;
+		}
+	}
+}
+
+@keyframes fadeInUp{
+	from{
+		opacity: 0;
+		transform: translateY(.5em);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInLeft{
+	from{
+		opacity: 0;
+		transform: translateX(-1em);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes backgroundFade {
+	from {
+		opacity: 0;
+	}
+  
+	to {
+		opacity: 1;
+	}
+  }

@@ -1,0 +1,67 @@
+.album-detail{
+	> article{
+		background-color: var(--body-background);
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-xxl);
+		> *{
+			display: flex;
+			flex-direction: column;
+			min-width: 350px;
+			flex: 1 1 0;
+		}
+	}
+	.album-video{
+		min-height: 30rem;
+	}
+	.album-songs{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 31rem;
+	}	
+	img{
+		@extend %shadow;
+	}
+}
+.albums {
+	ul{
+		display: grid;
+		grid-gap: var(--space-xxl);
+		grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+	}
+	img{
+		width: 100%;
+		transition: transform .2s ease-out;
+	}
+	figcaption{
+		background-color: black;
+		bottom: 0;
+		display: flex;
+		height: 15%;
+		justify-content: center;
+		align-items: center;
+		opacity: .2;
+		position: absolute;
+		width: 100%;
+		font-size: 1.1em;
+		transition: all .2s cubic-bezier(1, 0, 0, 1);
+	}
+	figure{
+		position: relative;
+		@extend %shadow;
+	}
+	a:active,
+	a:hover,
+	a:focus{
+		img{
+			transform: scale(1.05);
+			transition: all .2s ease-out;
+		}
+		figcaption{
+			height: 30%;
+			opacity: .8;
+			transition: all .2s cubic-bezier(1, 0, 0, 1);
+		}
+	}
+}

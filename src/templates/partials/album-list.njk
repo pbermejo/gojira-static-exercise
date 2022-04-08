@@ -1,0 +1,14 @@
+<section class="albums">
+	<h1 class="is-fadeInUp">
+		Álbumes
+	</h1>
+	<ul>
+		{% for album in albums %}
+			<li class="is-fadeInLeft">
+				<a href="{{album.url}}">
+					{% include 'partials/album.njk' %}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>

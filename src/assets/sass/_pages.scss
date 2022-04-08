@@ -1,0 +1,23 @@
+.page{
+	&-index {
+		background-blend-mode: color-dodge;
+		background-image: url("../images/background_01.jpg");
+		background-size: auto;
+		main{
+			padding-top: 50vh;
+		}
+	}
+	&-tour {		
+		background-blend-mode: soft-light;
+		background-image: url("../images/live_01.jpg");
+		background-size: cover;
+	}
+	&-band {
+		background-blend-mode: soft-light;
+		background-image: url("../images/live_01.jpg");
+	}
+	&-album {
+		background-blend-mode: color-dodge;
+		background-image: url("../images/background_01.jpg");
+	}
+}

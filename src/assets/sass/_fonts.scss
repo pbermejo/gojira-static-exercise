@@ -1,0 +1,55 @@
+$weights: (
+    light: 100,
+    normal: "regular",
+    semibold: 300,
+    bold: 700
+);
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "fonts" !default;
+
+$icon-vynil: "\e900";
+$icon-instagram: "\e901";
+$icon-spotify: "\e907";
+$icon-brand: "\e901";
+$icon-facebook: "\e902";
+$icon-brand1: "\e902";
+$icon-twitter: "\e903";
+$icon-brand2: "\e903";
+$icon-tweet: "\e903";
+$icon-mail_outline: "\e904";
+$icon-clear: "\e905";
+$icon-local_grocery_store: "\e906";
+$icon-access_time: "\e90b";
+$icon-menu: "\e908";
+$icon-arrow_forward_ios: "\e909";
+$icon-person: "\e90a";
+:root{
+	// FAMILY
+	--text-family: "Josefin Sans", sans-serif;
+
+	// SIZES
+	--text-default-size: 	110%;
+	--nav-size: 1.2em;
+	--text-line-height: calc(1rem * 1.5);
+	
+	// WEIGHTS
+	@each $weight, $value in $weights{
+        --text-weight-#{$weight}: #{$value};
+    }
+}
+@each $weight, $value in $weights{
+	@font-face {
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: $weight;
+		src: url('../fonts/josefin-sans-v16-latin-#{$value}.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/josefin-sans-v16-latin-#{$value}.woff') format('woff'), /* Modern Browsers */
+	}
+}
+@font-face {
+	font-family: '#{$icomoon-font-family}';
+	src:  url('../fonts/#{$icomoon-font-family}.woff?a4w7q5') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }

@@ -1,0 +1,37 @@
+<section class="members">	
+	<h1 class="is-fadeInUp">La Banda</h1>
+	<div>
+		<div class="band-description">
+			<p class="is-fadeInLeft">Formados en <time datetime="1996">1996</time> en Bayonne (Francia), cuenta en la actualidad con la siguiente formación: Joe Duplantier (voces y guitarras), Christian Andreu (guitarras), Jean-Michel Labadie (bajo) y Mario Duplantier (batería).</p>
+			<p class="is-fadeInLeft">
+				Gojira incita a un lanzamiento similar en su sexto álbum de larga duración y segundo para Roadrunner Records, Magma. Impulsados ​​por una emoción desenfrenada, las diez pistas enfrentan la fragilidad de la vida, las secuelas de la pérdida y lo que hay más allá de este reino.
+			</p>
+			<blockquote class="is-fadeInLeft">
+				La banda siempre ha actuado en extremos, descubriendo la luz y la oscuridad y encontrando la belleza en la pesadez. Magma continúa esa tradición ...
+			</blockquote>
+		</div>
+		<div class="band-image is-fadeInUp">
+			<figure>
+				<img src="../images/band.jpg" alt="Imagen de la banda">
+			</figure>
+			<ul>
+				{% for member in band.members %}
+					<li>
+						<h5>{{ member.name }}</h5>
+						<span>{{ member.role }}</span>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+			<p class="is-fadeInLeft">Tras publicar cuatro demos bajo el nombre de godzilla, <em>Victim</em> <time datetime="1996">1996</time>, <em>Possessed</em> <time datetime="1997">1997</time>,  <em>Saturate</em> <time datetime="1999">1999</time> y <em>Wisdom Comes</em> <time datetime="2000">2000</time>, publicaron su primer álbum en el mismo <time datetime="2000">2000</time>: <a href="terra-incognita/" title="Terra Incognita">Terra Incognita</a>. Poquito a poco, fuero consiguiendo un nombre en la escena underground. Su siguiente trabajo fue publicado tres años más tarde, <a href="the-link/" title="The Link">The Link</a> <time datetime="2003">2003</time>.</p>
+			<p class="is-fadeInLeft">Tras publicar este trabajo, empezaron una extensa gira, recogida en el DVD y en el álbum en directo The Link Live, en el que demuestran su buen hacer con una simbiosis perfecta entre fans y grupo que se nota de lejos. Una ejecución de los temas milimétricamente procesados.</p>
+			<p class="is-fadeInLeft">El año <time datetime="2005">2005</time> publicaron su tercer larga duración, <a href="from-mars-to-sirius/" title="From Mars To Sirius">From Mars To Sirius</a> que sirvió para confirmar que GOJIRA había dejado de ser un engendro underground que ha saltado a la escena mundial.</p>
+			
+			<p class="is-fadeInLeft">
+				 Musicalmente, el cuarteto francés —los hermanos Joe Duplantier [voz, guitarra] y Mario Duplantier [batería], Christian Andreu [guitarra] y Jean-Michel Labadie [bajo] - balancea graciosamente entre guitarras temblorosas y temblorosas, percusión alucinante, escalofriante elegantes melodías y atmósferas cósmicas. La banda siempre ha actuado en extremos, descubriendo la luz en la oscuridad y encontrando la belleza en la pesadez. Magma continúa esa tradición, mientras expande la paleta sonora.
+			</p>
+		<div>
+		</div>
+	</div>
+	
+</section>

@@ -1,0 +1,12 @@
+{% include "partials/master-top.njk" %}
+<div class="wrapper {{page}}">
+<header>
+{% block nav %}{% endblock %}
+</header>
+<main>
+{% block content %}{% endblock %}
+</main>
+{% include "partials/footer.njk" %}
+</div>
+<script src="{{baseDir}}js/menu.js"></script>
+{% include "partials/master-bottom.njk" %}

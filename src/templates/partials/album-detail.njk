@@ -1,0 +1,24 @@
+<section class="album-detail">
+	<h1 class="is-fadeInUp">{{album.title}}</h1>
+	<article>
+		<div class="album-info">
+			<img src="{{baseDir}}/images/{{album.imageUrl}}"  alt="{{album.imageUrl}}" />
+			<p>
+				<time datetime="{{album.date}}">Año: {{album.date}}</time>
+			</p>
+			<p>
+				{{album.description}}
+			</p>			
+		</div>
+		<div class="album-songs">
+			{% include 'partials/songs-list.njk' %}
+			{% include 'partials/button-list.njk' %}
+		</div>
+		<div class="album-lyrics">
+			{% include 'partials/album-lyrics.njk' %}
+		</div>
+		<div class="album-video">
+			{% include 'partials/album-video.njk' %}
+		</div>
+	</article>
+</section>

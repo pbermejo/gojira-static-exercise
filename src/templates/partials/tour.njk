@@ -1,0 +1,33 @@
+<section class="gira-venta">
+	<h1 class="is-fadeInUp">
+		GIRA
+	</h1>
+	<div>
+		<article>
+			<h2>Últimas fechas 2021</h2>
+			<ul>
+				{% for venue in tour %}
+				{% if loop.index > 0 %}
+					<li class="is-fadeInLeft">
+						<time class="fecha" datetime="{{venue.date}}">{{venue.date}}</time>
+						<h5 class="ciudad">{{venue.city}}</h5>
+						<time class="hora"><i class="icon-access_time"></i> {{venue.hour}}<small>h</small></time>
+						<span class="lugar">{{venue.location}}</span>
+						<span class="detalles"><a href="{{urlTourDetail}}{{venue.url}}">Más detalles <i class="icon-arrow_forward_ios"></i></a></span>
+					</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+		</article>
+		<article class="is-fadeInUp">
+			<h3>
+				Consigue ya tus entradas!
+			</h3>
+			{% include "partials/icon-tickets.njk" %}
+			<a href="https://www.viagogo.es/Entradas-Conciertos/Hard-Rock-Metal/Gojira-Entradas" class="button" target="_blank">
+				<i class="icon-local_grocery_store"></i>
+				<span>Comprar Entradas</span>
+			</a>
+		</article>
+	</div>
+</section>

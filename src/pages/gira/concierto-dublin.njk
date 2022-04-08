@@ -1,0 +1,19 @@
+{% set baseDir = "../" %}
+{% set page = "page-tour" %}
+
+{% extends 'master.njk' %}
+
+{% block nav %}
+
+	{% include "partials/nav.njk" %}
+
+{% endblock %}
+
+{% block content %}
+	{% for venue in tour %}
+		{% if loop.index == 1 %}
+			{% include 'partials/tour-detail.njk' %}
+		{% endif %}
+	{% endfor %}
+
+{% endblock %}

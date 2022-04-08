@@ -1,0 +1,21 @@
+<section class="gira-detalle">
+	<h1 class="is-fadeInUp">
+		Concierto Gojira
+	</h1>
+	<h2 class="ciudad">{{venue.location}}, {{venue.city}}</h2>
+	<h3>
+		<time class="fecha" datetime="{{venue.date}}">{{venue.date}}</time>
+	</h3>
+	<h4>
+		<time class="hora"><i class="icon-access_time"></i> {{venue.hour}}<small>h</small></time>
+		<span><i class="icon-person"></i> {{venue.capacity}}</span>
+	</h4>
+	<h5 class="precio">
+		{% include "partials/icon-tickets.njk" %}
+		<span>{{venue.price}}<small>€</small></span>
+	</h5>
+	<a href="https://www.viagogo.es/Entradas-Conciertos/Hard-Rock-Metal/Gojira-Entradas" class="button" target="_blank">
+		<i class="icon-local_grocery_store"></i>
+		<span>Comprar Entrada</span>
+	</a>
+</section>

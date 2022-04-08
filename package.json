@@ -1,0 +1,27 @@
+{
+  "name": "LIMA-UD1-practica-final",
+  "version": "1.0.0",
+  "description": "LIMA UD1 práctica final",
+  "main": "index.js",
+  "repository": "https://github.com/pbermejo/pbermejo.github.io.git",
+  "author": "pbermejo <pbermejo.dev@gmail.com>",
+  "license": "",
+  "scripts": {
+    "start": "gulp start",
+    "build": "gulp build",
+    "dist": "gulp dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-data": "^1.3.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-purgecss": "^3.1.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^5.0.0"
+  }
+}

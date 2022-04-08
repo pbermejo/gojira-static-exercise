@@ -1,0 +1,18 @@
+{% extends 'master.njk' %}
+{% set baseDir = "" %}
+{% set urlTourDetail = "gira/" %}
+{% set page = "page-index" %}
+
+{% block nav %}
+
+	{% include "partials/nav.njk" %}
+
+{% endblock %}
+
+{% block content %}
+
+	{% include 'partials/album-last.njk' %}
+
+	{% include 'partials/tour.njk' %}
+
+{% endblock %}

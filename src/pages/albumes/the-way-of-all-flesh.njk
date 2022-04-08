@@ -1,0 +1,20 @@
+{% set baseDir = "../../" %}
+{% set page = "page-albums" %}
+
+{% extends 'master.njk' %}
+
+{% block nav %}
+
+	{% include "partials/nav.njk" %}
+
+{% endblock %}
+
+{% block content %}
+{{baseDir}}
+	{% for album in albums %}
+		{% if loop.index0 == 3 %}
+			{% include 'partials/album-detail.njk' %}
+		{% endif %}
+	{% endfor %}
+
+{% endblock %}

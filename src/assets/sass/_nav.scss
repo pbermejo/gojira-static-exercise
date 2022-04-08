@@ -1,0 +1,67 @@
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+	max-width: 80rem; // ~1280px;
+	min-height: 5rem;
+	text-transform: uppercase;
+}
+.navbar-menu{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	justify-content: space-evenly;
+	width: 100%;
+	a{
+		align-items: center;
+		display: flex;
+		padding: .5em .5em;
+		color: var(--nav-text-color);
+		letter-spacing: .1em;
+
+		@extend %hover-underline-animation;
+		
+		&.active,
+		&:active,
+		&:hover,
+		&:focus{
+			color: var(--color-01);
+		}
+	}
+}
+.navbar-brand{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.navbar-logo{
+	color: inherit;
+	display: flex;
+	align-items: center;
+	max-width: 5em;
+	img{
+		height: auto;
+		filter: invert(.8);
+		transition: filter .3s cubic-bezier(1, 0, 0, 1);
+	}
+	&:active,
+	&:hover,
+	&:focus{
+		img{
+			filter: invert(.8) blur(.2em);
+			transition: filter .3s cubic-bezier(1, 0, 0, 1);
+		}
+	}
+}
+.navbar-burger{
+	cursor: pointer;
+	display: none;
+	font-size: 2rem;
+	&[aria-expanded="true"] > i::before {
+		content: "\e905"; 
+	}
+}

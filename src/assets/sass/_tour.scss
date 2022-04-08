@@ -1,0 +1,71 @@
+.gira-venta{
+	> div{		
+		display: grid;
+		grid-gap: var(--space-xl);
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		align-items: start;
+	}
+	article{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	ul{
+		margin: 0;
+	}
+	li{
+		display: grid;
+		grid-gap: var(--space-sm);
+		grid-template-columns: 7rem 1fr 1fr;
+		grid-template-areas: 
+			"fecha ciudad lugar"
+			"NULL hora precio";
+	}
+	li + li{
+		margin-top: var(--space-md);
+	}
+	.fecha{
+		font-weight: var(--text-weight-light);
+		grid-area: fecha;
+		text-transform: uppercase;
+		text-align: right;
+	}
+	.ciudad{
+		grid-area: ciudad;
+		text-align: left;
+	}
+	.lugar{
+		font-weight: var(--text-weight-semibold);	
+		grid-area: lugar;	
+		text-align: left;
+	}
+	.hora{
+		grid-area: hora;
+		text-align: left;
+	}
+	.detalles{
+		text-align: left;
+		grid-area: precio;
+	}
+}
+
+.gira-detalle{
+	> div{
+		display: grid;
+		grid-gap: var(--space-xl);
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		align-items: start;
+	}
+	.precio{
+		font-size: 3em;
+		margin: .5em;
+		display: flex;
+		place-content: center;
+		place-items: center;
+	}
+	svg{
+		margin: .2em;
+		max-width: 5rem;
+	}
+}
